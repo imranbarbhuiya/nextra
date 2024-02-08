@@ -1,14 +1,10 @@
 name: 'Bundle Analysis'
 
 on:
-  pull_request_target:
+  pull_request:
   push:
     branches: [main, v3, v4-v2]
   workflow_dispatch:
-
-defaults:
-  run:
-    working-directory: ./
 
 jobs:
   analyze:
